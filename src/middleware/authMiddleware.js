@@ -11,7 +11,7 @@ export const protect = async (req, res, next) => {
     try {
       token = req.headers.authorization.split(" ")[1];
 
-      const decoded = jwt.verify(token, "super_secret_key_123");
+      const decoded = jwt.verify(token, process.env.SECRETEkEY);
 
       req.user = decoded; // contains id, email, isAdmin
       next();

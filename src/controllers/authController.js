@@ -30,7 +30,7 @@ export const login = async (req, res) => {
     email: user.email,
     name: user.name
   },
-  "super_secret_key_123",
+  process.env.SECRETEkEY,
   { expiresIn: "7d" }
 );
 
