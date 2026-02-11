@@ -6,6 +6,7 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoutes.js";
 import adminArticleRoutes from "./routes/adminArticleRoutes.js";
+import healthRoutes from "./routes/healthRoutes.js";
 dotenv.config();
 connectDB();
 
@@ -17,6 +18,6 @@ app.use(express.json());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/articles", adminArticleRoutes);
-
+app.use("/api/health", healthRoutes);
 
 app.listen(process.env.PORT, () => console.log("Server running on 5000"));
