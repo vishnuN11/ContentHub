@@ -42,9 +42,6 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-// ✅ Apply CORS to all routes
-app.use(cors(corsOptions));
-
 
 app.use(helmet());
 app.use(express.json());
