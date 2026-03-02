@@ -19,8 +19,7 @@ const app = express();
    ✅ 1. CORS - Production Ready
 ===================================================== */
 const allowedOrigins = [
-  "http://localhost:5173",
-  "https://your-frontend-domain.com", // तुमचं production frontend URL
+  "http://localhost:5173", 
   process.env.FRONTEND_URL
 ].filter(Boolean);
 
