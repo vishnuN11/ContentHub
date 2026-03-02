@@ -47,6 +47,8 @@ export const generateOTP = () => {
 // Send OTP Email
 export const sendOTPEmail = async (toEmail, otp) => {
   console.log("📧 Sending from:", process.env.EMAIL_USER);
+  console.log("📧 Sending to:", toEmail);
+  console.log("🔑 EMAIL_PASS exists:", !!process.env.EMAIL_PASS);
   
   try {
     console.log(`📧 Sending OTP to ${toEmail}...`);
