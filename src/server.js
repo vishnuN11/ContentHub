@@ -9,7 +9,7 @@ import healthRoutes from "./routes/healthRoutes.js";
 import financeRoutes from "./routes/financeRoutes.js";
 import pdfRoutes from "./routes/pdfRoutes.js";
 import mockPaymentRoutes from "./routes/mockPaymentRoutes.js";
-
+import otpRoutes from './routes/otpRoutes.js';
 dotenv.config();
 connectDB();
 
@@ -56,7 +56,7 @@ app.use("/api/finance", financeRoutes);
 app.use("/api/pdf", pdfRoutes);
 app.use("/api/mock-payment", mockPaymentRoutes);
 app.use("/api/subscription", mockPaymentRoutes);
-
+app.use('/api/otp', otpRoutes);
 /* =====================================================
    ✅ 4. 404 Handler
 ===================================================== */
