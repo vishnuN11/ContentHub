@@ -1,7 +1,8 @@
 import express from 'express';
 import Otp from '../models/Otp.js';
 import User from '../models/User.js';
-import { generateOTP, sendOTPEmail } from '../services/emailService.js';
+// import { generateOTP, sendOTPEmail } from '../services/emailService.js';
+import { generateOTP, sendOTPEmail } from '../services/sendgridService.js';
 import rateLimit from 'express-rate-limit';
 
 const router = express.Router();

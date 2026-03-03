@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sendgrid/mail": "^8.1.6",
     "axios": "^1.13.5",
     "bcryptjs": "^3.0.3",
     "compression": "^1.8.1",
@@ -31,6 +32,7 @@
     "node-cache": "^5.1.2",
     "nodemailer": "^8.0.1",
     "pdf-parse": "^2.4.5",
+    "resend": "^6.9.3",
     "stripe": "^20.4.0",
     "xss-clean": "^0.1.4",
     "yahoo-finance2": "^3.13.0"
